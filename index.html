@@ -278,36 +278,38 @@
         <div class="modal">
             <form  class="modal-form">
 <p class="modal-title">Оставьте свои данные, мы вам перезвоним </p>
-<label for="" class="modal-form-field">Имя
+<label for="name" class="modal-form-field"> Имя</label>
     <span class="modal-form-input-wrapper">
-    <input type="text" name="user-name" class="modal-form-input" required minlength="2" autofocus>
+    <input  id="name" type="text" name="user-name" class="modal-form-input" required minlength="2" autofocus autocomplete="off">
     <svg class="modal-form-icon">
         <use href="./img/sprite.svg#icon-person"></use>
     </svg>
     </span>
-</label>
-<label for="" class="modal-form-field">Телефон
+
+<label for="phone" class="modal-form-field">Телефон</label>
 <span class="modal-form-input-wrapper">
-    <input type="tel" name="user-phone" class="modal-form-input" required title="096-111-11-11">
+    <input type="tel" id="phone" name="user-phone" class="modal-form-input" required title="096-111-11-11" autocomplete="off">
     <svg class="modal-form-icon">
         <use href="./img/sprite.svg#icon-phone"></use>
     </svg>
     </span>
-</label>
-<label for="" class="modal-form-field">Почта
+
+<label for="mail" class="modal-form-field">Почта</label>
 <span class="modal-form-input-wrapper">
-    <input type="email" name="user-email" class="modal-form-input" required>
+    <input type="email" id="mail" name="user-email" class="modal-form-input" required autocomplete="off">
     <svg class="modal-form-icon">
         <use href="./img/sprite.svg#icon-email"></use>
     </svg>
     </span>
-</label>
-<label for="" class="modal-form-field">Комментарий
-   <textarea name="user-message" class="modal-form-message" placeholder="Введите текст" ></textarea> 
-</label>
-<input type="checkbox"name="user-term" nclass="modal-form-term">
-<label for=""  class="modal-form-check-desk"> <a href="">Соглашаюсь с рассылкой и принимаю Условия договора</a></label>
-<button type="submit" class="modal-form-btn">отправить</button>
+
+<label for="massege" class="modal-form-field">Комментарий</label>
+   <textarea name="user-message" id="massege" class="modal-form-message" placeholder="Введите текст" ></textarea> 
+
+<input type="checkbox" id="user"  name="user-term" class="modal-form-term">
+<label for="user"  class="modal-form-check-desk link"> Соглашаюсь с рассылкой и принимаю&nbsp; <a class="contract" href="" 
+
+      >Условия договора</a></label>
+<button type="submit" class="modal-form-btn">Отправить</button>
 
             </form>
             <button type="button" class="modal-close-btn" data-modal-close>
